@@ -22,7 +22,7 @@ export default function MyCustomDialog() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="default" className="m-1 rounded-full">Open Dialog</Button>
+        <Button variant="default" className="m-1 rounded-full shadow-md">Open Dialog</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] rounded-3xl p-6 flex flex-col gap-4 border-border bg-background">
         <DialogHeader className="space-y-1.5 text-left">
