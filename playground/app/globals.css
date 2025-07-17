@@ -43,6 +43,10 @@
   --radius-md: calc(var(--radius) * 3);
   --radius-lg: calc(var(--radius) * 4);
   --radius-xl: calc(var(--radius) * 5);
+  --radius-2xl: calc(var(--radius) * 6);
+  --radius-3xl: calc(var(--radius) * 7);
+  --radius-4xl: calc(var(--radius) * 8);
+  --radius-full: calc(var(--radius) * 1000);
 }
 
 :root {

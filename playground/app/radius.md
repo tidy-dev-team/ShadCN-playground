@@ -90,3 +90,41 @@ And if we want to keep it in 4px grid, we can keep all our logic and just change
     ...
 }
 ```
+
+To get these variables out:
+
+```CSS
+.rounded-xs     (4px)
+.rounded-sm     (8px)
+.rounded-md     (12px)
+.rounded-lg     (16px)
+.rounded-xl     (20px)
+```
+
+And of course we can add all the missing classes we got from Tailwind to the theme itself like so:
+
+```CSS
+    --radius-xs: var(--radius);
+    --radius-sm: calc(var(--radius) * 2);
+    --radius-md: calc(var(--radius) * 3);
+    --radius-lg: calc(var(--radius) * 4);
+    --radius-xl: calc(var(--radius) * 5);
+    --radius-2xl: calc(var(--radius) * 6);
+    --radius-3xl: calc(var(--radius) * 7);
+    --radius-4xl: calc(var(--radius) * 8);
+    --radius-full: calc(var(--radius) * 1000);
+```
+
+This will be rendered as so:
+
+```CSS
+.rounded-xs     (4px)
+.rounded-sm     (8px)
+.rounded-md     (12px)
+.rounded-lg     (16px)
+.rounded-xl     (20px)
+.rounded-2xl    (24px)
+.rounded-3xl    (28px)
+.rounded-4xl    (32px)
+.rounded-full   (4000px)
+```
