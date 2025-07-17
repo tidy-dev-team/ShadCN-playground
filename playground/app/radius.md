@@ -1,4 +1,4 @@
-# Default classes
+# ShadCN Default classes
 By default, those are the border-radius classes coming from ShadCN, they're different from the default Tailwind classes (For example `.rounded-sm` is 4px in TW vs 6px here).
 
 ```CSS
