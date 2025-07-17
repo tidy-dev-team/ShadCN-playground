@@ -104,6 +104,8 @@ To get these variables out:
 And of course we can add all the missing classes we got from Tailwind to the theme itself like so:
 
 ```CSS
+@theme inline {
+    ...
     --radius-xs: var(--radius);
     --radius-sm: calc(var(--radius) * 2);
     --radius-md: calc(var(--radius) * 3);
@@ -113,6 +115,7 @@ And of course we can add all the missing classes we got from Tailwind to the the
     --radius-3xl: calc(var(--radius) * 7);
     --radius-4xl: calc(var(--radius) * 8);
     --radius-full: calc(var(--radius) * 1000);
+}
 ```
 
 This will be rendered as so:
